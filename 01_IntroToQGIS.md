@@ -91,7 +91,7 @@ As we just discovered, our country boundary file does not contain information ab
 
 ![CSV](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata02_02.png)
 
-Then in the dialog box which opens browse to the MappingData\Tabular folder and **select** TotalPopulation_Countries.csv.
+Then in the dialog box which opens browse to the `Data\Tabular` folder and **select** TotalPopulation_Countries.csv.
 **Select** `CSV` as the File Format. And **select** `no geometry (attribute table only)` as the Geometry Definition. **Click** OK.
 
 Note: if you have a csv file containing latitude and longitude coordinates you can create a point feature class from it by selecting `point coordinates` as the geometry and then selecting which column contains the x (longitude) and y (latitude coordinates).
