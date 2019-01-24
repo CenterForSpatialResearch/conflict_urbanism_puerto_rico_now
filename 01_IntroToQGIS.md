@@ -1,4 +1,4 @@
-## Thinking in Space
+## Introduction to QGIS
 
 In this exercise, you will learn introductory skills involved in using open source geographic information software (QGIS) to map existing spatial datasets. After the completion of this exercise, you should...
 
