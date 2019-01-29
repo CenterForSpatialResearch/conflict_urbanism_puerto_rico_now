@@ -18,8 +18,7 @@ Mac users must install several packages which support QGIS: GDAL, NumPy, matplot
 1. Download this installer: [QGIS 2.18 for Mac](http://qgis.org/downloads/macOS/QGIS-OSX-2.18.28-1.dmg)
 
 2. Once the download has completed, open the QGIS-OSX-2.18.28-1.dmg installer. You will see the following:
- ![img](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities_2017/blob/master/Resources/Images/InstallMac01-a.png)
-
+ ![img](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/218Install.png)
  You'll notice that the four installer packages included are numbered for the order in which you need to install them.
 
 3. First select GDAL Complete (circled above). An installer window will open, follow the steps and agree to the terms as prompted. (*If you encounter any security messages see the notes section at the bottom of this page for instructions.*)
