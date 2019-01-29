@@ -9,11 +9,11 @@ In this exercise, you will learn introductory skills involved in using open sour
 * query a GIS dataset, using both tabular and spatial queries
 
 ### Downloads
-Download the GitHub repository for this workshop series. Using the green button [here](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow), select `Download ZIP`. The Data folder will then have all of the datasets needed for this tutorial.
+Download the GitHub repository for this workshop series. Using the green button [here](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials), select `Download ZIP`. The Data folder will then have all of the datasets needed for this tutorial.
 
 In addition to the data files you have downloaded already you can optionally download the Gridded Population of the World raster dataset [here](https://drive.google.com/file/d/0B5KywkNXsT4JYlZGd1lReUVyYVk/view?usp=sharing). Please create a new folder in the Data directory called Raster and save the GriddedPop.zip file there. Once it has downloaded unzip the file so that we can use its contents.
 
-Find instructions for installing QGIS [here](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/00_DownloadingQGIS.md)
+Find instructions for installing QGIS [here](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/00_DownloadingQGIS.md)
 
 ### Mapping World Population(s)
 #### Premise
@@ -33,15 +33,15 @@ The Gridded Population of the World describes the distribution of population acr
 
 **Launch** QGIS. Your new blank map project will look like this:
 
-![blank](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata01_01.png)
+![blank](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata01_01.png)
 
-Begin to familiarize yourself with the interface. You can also refer to this [brief description](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/00_QGIS_InterfaceDescription.md) of the elements of the interface for more information.
+Begin to familiarize yourself with the interface. You can also refer to this [brief description](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/00_QGIS_InterfaceDescription.md) of the elements of the interface for more information.
 
 #### Adding Layers
 
 In order to construct our map within QGIS we will need to add our data layers to the map project. There are several ways to accomplish this however we will begin by using the `Add Vector Layer` button.
 
-![vector](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata01_02.png)
+![vector](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata01_02.png)
 
 **Navigate** to the `Data\Shape\` folder. You'll notice a number of different file extensions that are likely unfamiliar. The files outlined in blue are all components of the admin_0_countries shapefile, and the ones outlined in magenta are all elements of the populated_places shapefile. It is very important that all of these files stay together in the same folder otherwise QGIS will not be able to load the layer.
 
@@ -57,7 +57,7 @@ In order to construct our map within QGIS we will need to add our data layers to
 Add the `populated_places.shp` and `admin_0_countries.shp` files. Even though we will just be adding these files to the map QGIS still references the other files associated with each layer (.shx,.dbf,.sbn,.prj).
 Note you can select multiple shapefiles by holding down Command (on Mac) or Ctrl (on Windows) while individually clicking the file names.
 The selected layers will be added in default colors.
-![layers](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata01_03.png)
+![layers](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata01_03.png)
 The cities layer is represented by points and the countries layer is represented by polygons. The order of the layers can be controlled with the `Layers panel` to the left of the Data Frame.
 
 **Click** and drag the admin_0_countries layer on top of the populated_places layer. The cities points are no longer visible because they are behind the countries polygons (or only visible at the borders of the countries and the oceans).
@@ -66,15 +66,15 @@ We can change this by removing the fill color of the country polygons, leaving o
 
 We will display the countries as just borders. To access the `Style Menu` **double-click** on the layer name in the Layers panel, or **right-click** on the layer name and select `Properties.`  There are many different ways to symbolize data on a map through QGIS. For now, we will just use one style for all of the features in the layer.
 
-![properties](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata01_10.png)
+![properties](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata01_10.png)
 
 Once inside the Layer Properties Menu **select** the `Style` tab. **Select** `Simple Fill` and then in the `Symbol layer type` menu **select** Outline: Single line.
 
-![style](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata01_09.png)
+![style](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata01_09.png)
 
 When your style settings are finished, **click** `OK` to exit the properties menu. You should now be able to see each of the populated places points through the empty country polygons.
 
-![style](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata01_11.png)
+![style](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata01_11.png)
 
 **Save** your QGIS project by selecting `Project` > `Save`. Name your project MappingData_Population.qgs. QGIS projects are saved as .qgs files. It is important to note that the data layers are not saved with it the map project but are rather linked to the project.
 
@@ -89,19 +89,19 @@ As we just discovered, our country boundary file does not contain information ab
 
 **Select** the `add delimited layer` button.
 
-![CSV](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata02_02.png)
+![CSV](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_02.png)
 
 Then in the dialog box which opens browse to the `Data\Tabular` folder and **select** TotalPopulation_Countries.csv.
 **Select** `CSV` as the File Format. And **select** `no geometry (attribute table only)` as the Geometry Definition. **Click** OK.
 
 Note: if you have a csv file containing latitude and longitude coordinates you can create a point feature class from it by selecting `point coordinates` as the geometry and then selecting which column contains the x (longitude) and y (latitude coordinates).
 
-![CSV](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata02_03.png)
+![CSV](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_03.png)
 
 
 You'll notice TotalPopulation_Countries has been added to the Layers menu. Because it is just a table and does not have any geometry it does not show up in our map view. Lets open up its attribute table to see the fields that it contains before we embark on joining it to our country polygons. It contains three columns (or fields): `Country_Code`, `Name`, and `Pop_2010`.
 
-![CSV](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata02_05.png
+![CSV](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_05.png
 
 #### Performing a Table Join
 In order to answer questions about world population by country we will join tabular data published by the United Nations to the country polygons we have already mapped. A table join allows GIS users to combine tabular data with vector data based on an identical field in their attribute tables.  
@@ -131,7 +131,7 @@ Note that the Country_Code is identical to the Cnt_Code for each country, and ea
 
 We always start the join on the file that we are joining to. Here, we are joining the population estimates table to the country boundary shapefile. Thus, Open the Properties for admin_0_countries, and navigate to “Joins” in the left hand menu. Click the “+” icon. Make the following selections in the dialog box which appears.
 
-![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata02_09.png)
+![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_09.png)
 
 **Select** TotalPopulation_Countries as the “join layer”, Country_Code is the “join field”, and Cnt_Code is the “target field” which matches the join field in the admin_0_countries layer. Select the box next to “Custom field name prefix” and delete the contents of that field (note this is a helpful field if we are joining data from many different tables to one shapefile as it allows you to distinguish the source table). **Click** `OK` to close the join dialog. Then **Click** `OK` to close the layer properties menu.
 
@@ -162,11 +162,11 @@ There are multiple routes to select features within a dataset, either we can ope
 
 Option 1:
 
-![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata02_10.png)
+![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_10.png)
 
 Option 2:
 
-![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata02_11.png)
+![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_11.png)
 
 Either route will open the `Select by Expression` tool. We can be sure we are selecting features from the correct layer from the header of this dialog box. We see that the header reads “Select by expression - populated_places” and because we will select the cities first we know we are selecting features from the correct layer.
 
@@ -187,17 +187,17 @@ To do this we will expand `Fields and Values` and select `max_pop`.
 
 You should notice that some of the populated_places points will turn yellow. In addition at the bottom left corner of your QGIS project the footer will tell you how many features were selected: we see that 215 cities were selected.
 
-![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata02_12.png)
+![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_12.png)
 
 We will now save those 215 cities as a separate shapefile, just like we did for the admin_0_countries layer after we joined the UN population estimates to it.
 
 * **Right-Click** populated_places in the Layers menu, **select** `Save As`.
 * Then in the dialog box which opens select `Save only selected features`, and save the shapefile in `Data\Shape` as `populated_places_2mil.shp`.
-![Save](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata02_13.png)
+![Save](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_13.png)
 
 * This will then be added to our map as a new layer. In order to see the new layer clear your selection by clicking the `Deselect features from all layers button.`
 
-![Attribute]![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata02_14.png)
+![Attribute]![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_14.png)
 
 
 #### Select by location
@@ -213,7 +213,7 @@ Now, we will use this selection to identify which cities of greater than two mil
 * First ensure that we will be using just the *selected* countries when we perform the select by location query. On the menu bar navigate to `Processing`>`Options` Then under the `General` tab make sure that `use only selected features` is checked.  
 * On the menu bar navigate to `Vector`>`Research Tools`>`Select By Location`. In the dialog box that opens make the following selections:
 
-![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata02_15.png)
+![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_15.png)
 
 In the bottom left hand corner of your QGIS window you will see that five populated places were selected. Open the populated places attribute table and identify which cities these are by choosing `Show Selected Features` from the dropdown menu at the bottom left of the window.
 
@@ -235,21 +235,21 @@ To do this open the layer properties menu for the populated_places layer and nav
 
 Choose Graduated Symbols. Select `pop_max` as the column, `Size` as the method, and `Natural Breaks (Jenks)` as the mode. Click `Classify` and then click `Apply`. The populated places will now be sized according to their population.
 
-![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata02_17.png)
+![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_17.png)
 
 Now switch the method to `Color` and observe the results.
 
 **Bonus**: What if you want both color _and_ size? Once you've symbolized based on color, click on Symbol 'Change' and then on 'Simple Marker.' Next to the size option, there is a small icon. Select 'Size Assistant'.
 
-![blank](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/georef3-11.png)
+![blank](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/georef3-11.png)
 
 In the pop up box, select the pop_max filed and Flannery classification
 
-![blank](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/georef3-12.png)
+![blank](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/georef3-12.png)
 
 The outcome of your selections should look something like this:
 
-![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata02_19.png)
+![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_19.png)
 
 **Raster Classified Color Ramp** *(Optional)*
 
@@ -259,7 +259,7 @@ Raster datasets are composed of a grid of cells, or pixels, of a specific size w
 
 If it isn’t already check the box next to the gridded population layer, gpw-v4-population-count-2010, to make it visible if it is not the top layer drag it in the Layers menu so that it is the top visible layer. It will largely be black. Now open the properties menu for the gridded population layer. Navigate to the style tab. You’ll notice that this looks different than the style menu we have been working with for our vector layers. Instead of a symbol type we have an option for ‘Render type’ and many options for how to color the bands in our dataset.
 
-![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata02_20.png)
+![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_20.png)
 
 Here you will see that the default style is `Singleband gray`, which means that it's only symbolizing in grayscale based on one band (other raster datasets can be made up of multiple bands, some examples of these include satellite images and color historical maps). The color gradient is currently set as `Black to white` but that can be switched to `White to black`.
 
@@ -267,7 +267,7 @@ And it is symbolizing based on the minimum value, in this case '0' and on the ma
 
 Now change the `Render type` to `Singleband pseudocolor` to get something similar to a symbology we would do for a vector file. On the right-hand panel you will see the `Mode of classification` (`Continuous` or `Equal Interval`) and below, again, the Load min/max values panel. Click on the `Classify` button to load the values and then hit `Apply` to see it on the map. Now you can see clearly the regions of the world with the highest population density. You can experiment with the style of your map by changing the colors used with the pulldown menu highlighted in blue.
 
-![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata02_21.png)
+![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_21.png)
 
 
 #### On your Own
@@ -281,7 +281,7 @@ Experiment with different classification modes and numbers of classes, or create
 
 After selecting each combination **Click** `Classify`.  Click `Apply`. The country polygons will change on the map.
 
-![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata02_22.png)
+![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_22.png)
 
 
 #### Designing a map
@@ -291,31 +291,31 @@ Create a map composition where all three depictions of world populations are val
 
 ![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/26_LayerTransparency.png)
 
-![dot layer transparency](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata02_23.png)
+![dot layer transparency](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_23.png)
 
 Once you are pleased with your map composition we will create a new print composer. When prompted you can either name the print composer or not.
 
-![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata02_24.png)
+![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_24.png)
 
 To add a new map to the composer select the add new map button. Then click once to begin to drag a rectangle over the area on the page that you would like the map to occupy and click again to stop. Whatever is showing in your QGIS map project window as you create this new map in the print composer is what will appear in the new map.
 
-![Attribute]![dot layer transparency](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata02_25.png)
+![Attribute]![dot layer transparency](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_25.png)
 
 Next we will add a legend. Select Add new legend, and again click to draw a rectangle where you would like to place the legend. An unformatted legend that matches the information from the Layers panel will appear. You can use the options in the Item Properties tab (circled in blue) to change which layers are represented in the legend and to change the labeling of the layers in the legend. Scroll within this tab to familiarize yourself with which properties about the legend you can change.
 
 We will format the legend and change the titles of each dataset so they are more descriptive. To do this un-click “Auto update” to make changes, then change the layer names by clicking the “legend item properties” button circled in magenta.
 
-![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata02_26.png)
+![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_26.png)
 
 Last we will add two text boxes, one with a title for the map and another with abbreviated citations for our data sources. Click the add new label button then use the Main properties field to add the text you want, and use the Font button to change the text size and font.
 
-![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata02_28.png)
+![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_28.png)
 
 Finally use one of the export options circled in blue above to save the map composition as an image file, PDF, or SVG.
 
 * Make this map composition your own – experiment with changing colors, and symbol sizes and the locations of the text and scale bars. The aim is to create a design that you are pleased with, that is clear, and follows cartographic conventions.
 
-![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow/blob/master/Images/mappingdata02_29.png)
+![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_29.png)
 
 ### Deliverables:
 
