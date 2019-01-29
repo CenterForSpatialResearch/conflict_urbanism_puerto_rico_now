@@ -12,12 +12,12 @@ February 1, 11am-1pm
 Exercise due February 8  
 This module will allow students to: develop basic familiarity with QGIS and its functions; gain fluency with foundational GIS concepts; understand GIS spatial data types and the kinds of analysis that are possible with each.
 
-**Prior to this session please follow instructions [here](http://qgis.org/downloads/QGIS-OSGeo4W-2.18.28-1-Setup-x86.exe) to download and install QGIS**
+**Prior to this session please follow instructions [here](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/00_DownloadingQGIS.md) to download and install QGIS**
 
 **2. Making Spatial Data**  
 February 8, 11am-1pm  
 Exercise due February 15  
-This module will introduce students to methods for creating spatial data. The exercise and workshop will cover how to give geographic coordinates (georeference) scanned maps using QGIS, as well as how to digitize (trace) features from this scanned map to create new shapefiles. In addition, the module will introduce students to basic methods of geocoding locations from addresses. These are two key ways of creating spatial data from printed sources, as well as from text fields.
+This module will introduce students to methods for creating spatial data. The exercise and workshop will cover how to give geographic coordinates (georeference) scanned maps using QGIS, as well as how to digitize (trace) features from this scanned map to create new shapefiles. In addition, the module will introduce students to basic methods of geocoding locations from latitude, longitude coordinates. These are two key ways of creating spatial data from printed sources, as well as from text fields.
 
 **3. Satellite Imagery**  
 February 15, 11am-1pm  
