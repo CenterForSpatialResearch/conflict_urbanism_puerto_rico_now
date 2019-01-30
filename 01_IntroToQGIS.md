@@ -52,7 +52,7 @@ In order to construct our map within QGIS we will need to add our data layers to
 * .prj - The file that stores the coordinate system information.
 * For more information on these extensions and others see [this explanation by ESRI](http://webhelp.esri.com/arcgisdesktop/9.2/index.cfm?TopicName=Shapefile_file_extensions).
 
-![vector](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/02_ElementsofSHP.png)
+![vector](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/02_ElementsofSHP.png)
 
 Add the `populated_places.shp` and `admin_0_countries.shp` files. Even though we will just be adding these files to the map QGIS still references the other files associated with each layer (.shx,.dbf,.sbn,.prj).
 Note you can select multiple shapefiles by holding down Command (on Mac) or Ctrl (on Windows) while individually clicking the file names.
@@ -75,6 +75,10 @@ Once inside the Layer Properties Menu **select** the `Style` tab. **Select** `Si
 When your style settings are finished, **click** `OK` to exit the properties menu. You should now be able to see each of the populated places points through the empty country polygons.
 
 ![style](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata01_11.png)
+
+**Optional:** If you have downloaded the Gridded Population of the World dataset you can add this now using the `add Raster Layer` button. From within the `Data/Raster` folder that you created select `GPW_v4_2010.TIF` file. As you observed with the shapefile format there are a number of files with unfamiliar extensions. These contain projection and other information that allow the raster dataset to be correctly positioned in geographic space. Once you have added the new layer **Click** the check box next to the `GPW_v4_2010.TIF` layer in the layers panel to toggle its visibility off, we will come back to this later. 
+
+![raster](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/Raster.png)
 
 **Save** your QGIS project by selecting `Project` > `Save`. Name your project MappingData_Population.qgs. QGIS projects are saved as .qgs files. It is important to note that the data layers are not saved with it the map project but are rather linked to the project.
 
@@ -101,7 +105,7 @@ Note: if you have a csv file containing latitude and longitude coordinates you c
 
 You'll notice TotalPopulation_Countries has been added to the Layers menu. Because it is just a table and does not have any geometry it does not show up in our map view. Lets open up its attribute table to see the fields that it contains before we embark on joining it to our country polygons. It contains three columns (or fields): `Country_Code`, `Name`, and `Pop_2010`.
 
-![CSV](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_05.png
+![CSV](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_05.png)
 
 #### Performing a Table Join
 In order to answer questions about world population by country we will join tabular data published by the United Nations to the country polygons we have already mapped. A table join allows GIS users to combine tabular data with vector data based on an identical field in their attribute tables.  
@@ -197,7 +201,7 @@ We will now save those 215 cities as a separate shapefile, just like we did for 
 
 * This will then be added to our map as a new layer. In order to see the new layer clear your selection by clicking the `Deselect features from all layers button.`
 
-![Attribute]![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_14.png)
+![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_14.png)
 
 
 #### Select by location
