@@ -76,7 +76,7 @@ When your style settings are finished, **click** `OK` to exit the properties men
 
 ![style](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata01_11.png)
 
-**Optional:** If you have downloaded the Gridded Population of the World dataset you can add this now using the `add Raster Layer` button. From within the `Data/Raster` folder that you created select `GPW_v4_2010.TIF` file. As you observed with the shapefile format there are a number of files with unfamiliar extensions. These contain projection and other information that allow the raster dataset to be correctly positioned in geographic space. Once you have added the new layer **Click** the check box next to the `GPW_v4_2010.TIF` layer in the layers panel to toggle its visibility off, we will come back to this later. 
+**Optional:** If you have downloaded the Gridded Population of the World dataset you can add this now using the `add Raster Layer` button. From within the `Data/Raster` folder that you created select `GPW_v4_2010.TIF` file. As you observed with the shapefile format there are a number of files with unfamiliar extensions. These contain projection and other information that allow the raster dataset to be correctly positioned in geographic space. Once you have added the new layer **Click** the check box next to the `GPW_v4_2010.TIF` layer in the layers panel to toggle its visibility off, we will come back to this later.
 
 ![raster](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/Raster.png)
 
@@ -183,7 +183,7 @@ We want to select just those cities with a maximum estimated population of great
 To do this we will expand `Fields and Values` and select `max_pop`.
 * **Double-click**  on `max_pop` and it will appear in the expression box on the right.
 * Next we will open `Operators` and double-click on the greater than symbol (>).
-* Then type in 2,000,000. Your expression should now look like the following.
+* Then type in 2000000. Your expression should now look like the following.
 
 ![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/16_SelectionExpression_Final.png)
 
@@ -219,7 +219,7 @@ Now, we will use this selection to identify which cities of greater than two mil
 
 ![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_15.png)
 
-In the bottom left hand corner of your QGIS window you will see that five populated places were selected. Open the populated places attribute table and identify which cities these are by choosing `Show Selected Features` from the dropdown menu at the bottom left of the window.
+In the bottom left hand corner of your QGIS window you will see that four populated places were selected. Open the populated places attribute table and identify which cities these are by choosing `Show Selected Features` from the dropdown menu at the bottom left of the window.
 
 ![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/20_SelectedFeatures.png)
 
