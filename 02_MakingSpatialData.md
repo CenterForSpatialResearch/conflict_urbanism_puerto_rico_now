@@ -168,7 +168,11 @@ Select `CSV` as the file format. `Point Coordinates` as the geometry definition.
 
 Click `OK`
 ![dialog box](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/csvToShp.png)
-The point locations of Hotels should now appear on your map. To save this as a shapefile Right Click on the layer name in the layers panel and select `Save As`.
+The point locations of Hotels should now appear on your map.
+![map](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/Hotels.png)
+
+To save this as a shapefile Right Click on the layer name in the layers panel and select `Save As`.
+
 
 ## Deliverables
 To complete this tutorial, create a zip file containing the:
