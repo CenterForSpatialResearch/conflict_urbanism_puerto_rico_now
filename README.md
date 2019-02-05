@@ -14,7 +14,7 @@ This module will allow students to: develop basic familiarity with QGIS and its 
 
 **Prior to this session please follow instructions [here](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/00_DownloadingQGIS.md) to download and install QGIS**
 
-**2. Making Spatial Data**  
+**[2. Making Spatial Data](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/02_MakingSpatialData.md)**  
 February 8, 11am-1pm, 208b Butler Library (Studio@Butler)  
 Exercise due February 15  
 This module will introduce students to methods for creating spatial data. The exercise and workshop will cover how to give geographic coordinates (georeference) scanned maps using QGIS, as well as how to digitize (trace) features from this scanned map to create new shapefiles. In addition, the module will introduce students to basic methods of geocoding locations from latitude, longitude coordinates. These are two key ways of creating spatial data from printed sources, as well as from text fields.

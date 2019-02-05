@@ -167,11 +167,15 @@ In the dialog box that opens use the `Browse` button to navigate to the `PR_Hote
 Select `CSV` as the file format. `Point Coordinates` as the geometry definition. `Longitude` as the X field, and `Latitude` as the Y field.
 
 Click `OK`
-![dialog box](https://github.com/brianhouse/mapping-architecture-urbanism-humanities/blob/master/Images/csvToShp.png)
+![dialog box](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/csvToShp.png)
 The point locations of Hotels should now appear on your map. To save this as a shapefile Right Click on the layer name in the layers panel and select `Save As`.
 
 ## Deliverables
-To complete this tutorial, create a zip file containing your `1940_San_JuanCoastLine`,  `NamedBuildings_SanJuan` and `PR_Hotels` shapefiles (remember to include all of the files which comprise the shapefile format) as well as your GeoTiff of the 1940 USGS map and upload this to Canvas.
+To complete this tutorial, create a zip file containing the:
+  - `1940_San_JuanCoastLine`,  
+  - `NamedBuildings_SanJuan` and
+  - `PR_Hotels` shapefiles (remember to include all of the files which comprise the shapefile format) - as well as your GeoTiff of the 1940 USGS map
+Upload this to Canvas.
 ______________________________________________________________________________________________________________
 
 
