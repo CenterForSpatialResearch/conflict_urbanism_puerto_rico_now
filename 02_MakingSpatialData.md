@@ -1,4 +1,4 @@
-## Tutorial 7: Georeferencing
+## Making Spatial Data
 
 In this exercise, you will explore some of the georeferencing tools available in QGIS and use them to georeference a 1940 map of San Juan. You will learn how to use GIS tools to georectify raster datasets. You will then use the georeferenced map to digitize vector features from the map.
 
@@ -107,7 +107,6 @@ Compare the georeferenced map with the Open Street Map layer.  Make sure that fe
 
 In the next section, you will be using the map you georeferenced here and digitizing some of the features from it.
 
-Export your georeferenced layer as a GeoTiff - be sure to select 'Rendered Image' and CRS 4326 (Psuedo Mercator). Rendered image will remove the black background. CRS 4326 because that is what all webmaps use.
 
 
 ## Part II - Making Vector Data from Raster Data
