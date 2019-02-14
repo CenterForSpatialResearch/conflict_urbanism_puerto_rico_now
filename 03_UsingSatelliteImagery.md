@@ -110,26 +110,13 @@ Your dialog box options should look like this:
   - *note* you may need to click the refresh icon next to the input image dropdown menu
 ![Input](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite05.png)
 11. Use the `RBG` tool to set different band combinations. Look [here](http://web.pdx.edu/~emch/ip1/bandcombinations.html) for different combinations and the kinds of phenomena that they make visible.
-- R
+![RGB](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite08.png)
+- `3-2-1` will show a 'natural color' image
+![natural](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite09.png)
+- `4-3-2` will show a 'near infrared' image which highlights turbidity and silt in water in cyan and shows vegetation in shades of red.
+![infrared](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite10.png)
+
 #### Repeat steps 1-11 on the second Landsat image bundle we downloaded to compare false color composites before and after Hurricane Maria.
 
-
-
-
-
-
-Things to note:
-- there are a number of different data products made available from USGS via Earth Explorer. Make sure you have found the one(s) that are appropriate for your use. NASA publishes lots of resources about Landsat data.
-
-
-This course made available online from Humbolt University is a good basic introduction: http://gsp.humboldt.edu/OLM/Courses/GSP_216_Online/lesson3-1/composites.html
-
-
-- Explanation of each of the Bands captured by the Landsat 8 satellite from [USGS](https://landsat.usgs.gov/what-are-best-spectral-bands-use-my-study).
-
-for an in depth explanation see: [Barsi, Julia A., Kenton Lee, Geir Kvaran, Brian L. Markham, and Jeffrey A. Pedelty. “The Spectral Response of the Landsat-8 Operational Land Imager.” Remote Sensing 6, no. 10 (October 2014): 10232–51.](https://www.mdpi.com/2072-4292/6/10/10232)
-
-- https://www.harrisgeospatial.com/Learn/Blogs/Blog-Details/ArtMID/10198/ArticleID/15691/The-Many-Band-Combinations-of-Landsat-8
-
-[lands 7 band combinations](http://web.pdx.edu/~emch/ip1/bandcombinations.html)
-The Landsat satellite circles the globe on a 16 day cycle. [This page](https://landsat.usgs.gov/landsat_acq) from the USGS is helpful for identifying the days of coverage for a particular area. From it we can see that the western portion of Puerto Rico is falls between two paths of the landsat's orbit: the western portion of the island is captured on Day 1 of the cycle, and the easter portion is captured on the 10th day of the cycle.
+The near infrared band combination highlights outflows and flooding in areas quite well, below is the same area depicted in the September 17 image above, but was captured on October 3, 2017:
+![infrared](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite11.png)
