@@ -122,19 +122,22 @@ A color composite using `3-2-1` for a 'natural color' image:
 
 ![natural](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite09.png)
 
-Or to view a 'near infrared' image set the RGB band values to `4-3-2`. This type of 'false color composite' image is similar to infrared aerial photography and highlights vegetation in shades of red.
+The combination of bands `4-5-3` is particularly well suited for looking at land/water boundaries as well as levels of water saturation.
+
+![435](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite14.png)
+
+Or to view a 'near infrared' image set the RGB band values to `4-3-2`. This type of 'false color composite' image is similar to infrared aerial photography and highlights vegetation in shades of red. Try these and others.
 
 ![infrared](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite10.png)
 
-The combination of bands `4-5-3` is particularly well suited for looking at land/water boundaries as well as levels of water saturation. Try these and others.
 
 12. To export a false color composite as a GeoTiff image (that freezes the given false color composite you've chosen) right click on the virtual raster that contains your `band set` in the layers menu. Select `save as` and choose `rendered image` as your output mode, and select a location and file name to save the image. This false color composite is now saved, you no longer have access to the raw data of each of the Landsat bands that originally comprised it but you can work with it as a base map or for other uses.
 
 #### Repeat steps 1-12 on the second Landsat image bundle we downloaded to compare false color composites before and after Hurricane Maria.
 
-The near infrared band combination highlights outflows and flooding in areas quite well, below is the same area depicted in the September 17 image above, but was captured on October 3, 2017:
+The `4-5-3` combination which uses the near infrared, mid infrared, and red bands  highlights outflows and flooding in areas quite well, below is the same area depicted in the September 17 image above, but was captured on October 3, 2017:
 
-![infrared](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite11.png)
+![infrared](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite15.png)
 
 ### Deliverables:
 Upload two color composite GeoTiff files to canvas.  
@@ -145,4 +148,4 @@ You can choose to upload one for each Landsat dataset we downloaded (September 1
 If you are interested in learning how to make land use classifications based on Landsat satellite imagery you can follow [this](https://pointsunknown.nyc/tutorials/05_ChangeMapping.html#classification) tutorial written by CSR Research Scholar Grga Basic for *Points Unknown*.
 _________________________________________________________________________________________________
 
-Tutorial written by Dare Brawley, for *Conflict Urbanism: Puerto Rico Now*, a spring 2019 seminar offered by the [Center for Spatial Research](http://c4sr.columbia.edu). (Many thanks to Grga Basic for guidance on working with Landsat imagery in QGIS.) More information about the course is available [here](http://c4sr.columbia.edu/courses/conflict-urbanism-puerto-rico-now). 
+Tutorial written by Dare Brawley, for *Conflict Urbanism: Puerto Rico Now*, a spring 2019 seminar offered by the [Center for Spatial Research](http://c4sr.columbia.edu) (With thanks to Grga Basic for guidance on working with Landsat imagery in QGIS). More information about the course is available [here](http://c4sr.columbia.edu/courses/conflict-urbanism-puerto-rico-now). 
