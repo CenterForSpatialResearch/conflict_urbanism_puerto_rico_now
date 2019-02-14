@@ -1,20 +1,24 @@
-## Working with Satellite Imagery
+# Working with Satellite Imagery
 
-This exercise will introduce two types of remotely sensed data, multispectral satellite imagery, and high resolution natural color satellite and aerial imagery. In particular we will work with multispectral imagery from the Landsat Satellite Program and high resolution aerial and satellite images from Google Maps.
+This exercise will introduce you to multispectral satellite imagery, and to the process of visualizing phenomena through 'false color composites'. As an introduction we will create false color composites using Landsat satellite imagery of Puerto Rico captured just before and after Hurricane Maria.
 
 After completing this exercise you will:
 * have familiarity with basic characteristics of multispectral satellite imagery
 * learned how to acquire Landsat satellite imagery through the U.S. Geological Survey
 * created a false color composite from multispectral Landsat dataset
-* develop familiarity with the Google Static Maps API and download ungeoreferenced satellite and aerial imagery for a set of locations
 
-### Working with Landsat Satellite Imagery
+## Some Background on Working with Landsat Satellite Imagery
 
 In order to explore characteristics of multispectral satellite imagery we will download a multispectral image from the USGS and experiment with creating images known as 'false color composites.'
 
 In order to do this we first will introduce some key ideas about multispectral satellite imagery and the Landsat satellite in particular.
 
-**Multispectral** satellite imagery refers to a type of data that records specific wavelength ranges in the electromagnetic spectrum. In the case of the Landsat program, the Landsat Satellite has  sensors that are able to detect light from frequencies beyond the (visible light spectrum)[https://en.wikipedia.org/wiki/Visible_spectrum] (both near infrared as well as ultra violet frequencies). Specific frequency ranges are each recorded in a distinct **band**. A single Landsat 'image' is actually composed of multiple `.tif` files, one for each band of data. Each of these bands is a monochromatic image.
+**Multispectral** satellite imagery refers to a type of data that records specific wavelength ranges in the electromagnetic spectrum. In the case of the Landsat program, the Landsat Satellite has  sensors that are able to detect light waves beyond the [visible light spectrum](https://en.wikipedia.org/wiki/Visible_spectrum) (both near infrared as well as ultra violet frequencies). Specific frequency ranges are each recorded in a distinct **band**.
+
+A single Landsat 'image' is actually composed of multiple bands. Each band is an individual **raster** dataset where the value of each pixel corresponds to the wavelength of reflected light captured by the satellite. These datasets are stored as individual `.tif` files which appear as monochromatic images when we load them in QGIS individually.
+
+For example the image below show band 5 from a Landsat 8 satellite image captured of the western portion of Puerto Rico on October 3, 2017:
+![monochrome](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite12.png)
 
 This image shows wavelengths along the electromagnetic spectrum as well as the ranges that are captured by each Landsat band.  
 ![spectrum](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/Landsat8_SpectralBands.jpg)
@@ -24,6 +28,8 @@ The field of remote sensing science is dedicated, in part, to understanding the 
 From the answers to these questions researchers study topics like landscape change, [ecological vulnerability](https://landsat.visibleearth.nasa.gov/view.php?id=88873), and large scale [urban development](https://www.wired.com/2012/07/landsat-city-change/).
 
 One of the ways that remote sensing scientists study these 'spectral signatures' is through creating color composite images using multiple of the monochromatic bands from multispectral imagery. This is a method by which each band is assigned a color (red, green, or blue) and its values are mapped onto an RGB color scale. We can make color composites that approximate a 'natural color' image of the earth's surface. Or we can combine different frequency ranges from the electro magnetic spectrum into **false color composites** to reveal different phenomena on the ground.
+Below shows natural color and 'near infrared' false color composite images:
+![compare](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite13.png)
 
 [This introduction](https://fromgistors.blogspot.com/p/user-manual.html) to remote sensing written by the developer of a remote sensing library for QGIS that we will use in this exercise provides a good entry point to further information on many of these concepts.
 
@@ -33,7 +39,7 @@ The Landsat satellite circles the globe on a 16 day cycle. [This page](https://l
 
 This exercise will walk through how to download Landsat data and then how to perform basic tasks with it in QGIS.
 
-#### Downloading Landsat satellite images
+## Downloading Landsat satellite images
 
 Landsat satellite data is freely available and can be downloaded via a number of different websites. We will be using the USGS website: [EarthExplorer](https://earthexplorer.usgs.gov/)
 
@@ -46,27 +52,26 @@ Landsat satellite data is freely available and can be downloaded via a number of
 6. In the `Data Sets` menu open the nested section for `Landsat` and then for `Landsat Collection 1 Level-1`
 7. Check the box next to `Landsat 8 OLI/TIRS c1 Level-1`
 ![datasets](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite002.png)
-8. Select `Additional Criteria` we will not make any selections here but yuo can use this to search only for images with less than a certain percent of cloud cover.
-9. Select `Results`. You should see a number of images for specified dates and paths.
+8. Select `Additional Criteria` we will not make any selections here in this exercise, but note for future reference that you can use this to search only for images with less than a certain percentage of cloud cover.
+9. Select `Results`. You should see a number of images for specified dates and paths. Here you can view the footprint of each image. As well as select images for download.
 
-Here you can view the footprint of each image. As well as select images for download.
-10. Select the images you are interested in downloading.
+10. Find the images you are interested in downloading.
   - For this exercise select the images with the following attributes:
-  Image 1:
-    Acquisition Date: 17-SEP-17
-    Path: 5
-    Row: 47
-  Image 2:
-    Acquisition Date: 03-OCT-17
-    Path: 5
-    Row: 47
-11. Click on the download icon (looks like a harddrive) for each image.
+  Image 1:  
+    Acquisition Date: 17-SEP-17  
+    Path: 5  
+    Row: 47  
+  Image 2:  
+    Acquisition Date: 03-OCT-17  
+    Path: 5  
+    Row: 47  
+11. Click on the download icon (looks like a hard drive and a green arrow) for the first image.
 12. In the Download Options menu that will open, select `Level -1 GeoTIFF Data Product`. This is the data set that will include all of the Landsat 8 multispectral bands discussed previously.
 ![download](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite003.png)
 13. Repeat steps 11 and 12 to download the second image.
 14. Two zip files will download, unzip them, and save in the working directory you are using for this class.
 
-#### Creating False Color Composites
+## Creating False Color Composites
 
 We will use a tool called the "Semi-Automatic Classification Plugin" (SCP) to assist us with creating composite images from the bands of the Landsat images we just downloaded. This plugin has been developed by Luca Congedo and is released under the "Creative Commons Attribution-ShareAlike 4.0 International License." It is an example of the kind of open source tools being developed by the QGIS community.
 
@@ -74,7 +79,7 @@ Full documentation as well as related resources for this set of tools can be fou
 
 The SCP plugin provides a number of tools related to satellite image processing and analysis.
 
-First we will **Install Semi-Automatic Classification Plugin**
+#### First we will **Install Semi-Automatic Classification Plugin**
 1. Navigate to the `Plugins>Manage and Install Plugins` from your menu bar.
 2. Search for and install the `Semi-Automatic Classification Plugin`
 3. When the plugin has finished installing make sure the check box next to the plugin's name is checked and select `Close`.
@@ -90,33 +95,54 @@ First we will **Install Semi-Automatic Classification Plugin**
 ![Bandlist](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite04.png)
 4. In the list of Bands that appears below the metadata heading select bands 1, 8, 9, 10, 11, and BQA by clicking the number next to the band name. (You may need to expand the Band column in the table to see the band numbers).
 5. Click the minus icon to remove these bands from the list.
-  - **Note:** you should just have bands 2, 3, 4, 5, 6, 7 remaining in this list. Make sure you have no other bands.
+    - **Note:** you should just have bands 2, 3, 4, 5, 6, 7 remaining in this list. Make sure you have no other bands.
 6. Select:
-  - `Apply DOS1 atmospheric correction`
-  - `Create Band set and use Band set tools`
-  -  `Use NoData value`
-Your dialog box options should look like this:
+    - `Apply DOS1 atmospheric correction`
+    - `Create Band set and use Band set tools`
+    -  `Use NoData value`  
+    Your dialog box options should look like this:
 ![loading](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite06.png)
 7. Click `Run` (the gear in the bottom right corner).
 8. You will be prompted to choose a folder to save the new band set in. Create a new folder and name it `20170917_Converted` The tool will run and will take some time to complete. When it finishes (this may take a few minutes, this is a good time to take a break) all of the individual bands will appear in the layers panel.
-9. We now need to **define our Band Set**. select the `Band set` icon.
-  - In the band list select `refresh` to load all of the bands.
-  - Select bands 2-7. Click the `Add band to band set` button (the plus sign). These bands should appear in the band set definition below.
-  - select:
-    - Quick wavelength settings as `Landsat 8 OLI [bands 2,3,4,5,6,7]`
-    - `Create virtual raster of band set`
-    ![bandsetdefinition](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite07.png)
+9. We now need to **define our Band Set**. First, select the `Band set` icon.
+    - In the band list select `refresh` to load all of the bands.
+    - Select bands 2-7. Click the `Add band to band set` button (the plus sign). These bands should appear in the band set definition below.
+    - select:
+      - Quick wavelength settings as `Landsat 8 OLI [bands 2,3,4,5,6,7]`
+      - `Create virtual raster of band set`
+      ![bandsetdefinition](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite07.png)
 10. Select the Band set layer as the `Input image` in the SCP Dock.
-  - *note* you may need to click the refresh icon next to the input image dropdown menu
+    - *note* you may need to click the refresh icon next to the input image dropdown menu
 ![Input](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite05.png)
-11. Use the `RBG` tool to set different band combinations. Look [here](http://web.pdx.edu/~emch/ip1/bandcombinations.html) for different combinations and the kinds of phenomena that they make visible.
+11. Use the `RBG` tool to set your desired band combination. This tool tells the program which band it should map to the red, green, or blue band of a standard RBG image. Setting band 3 and Red, band 2, as Blue, and band 1 as Green will show a `natural color` image whose colors are similar to what we are familiar with. This combination is similar to what we see with the naked eye because it uses the bands that capture electromagnetic wavelengths in the visible light spectrum.
+    - Further information about band combinations and the kinds of phenomena they make visible can be found [here](http://web.pdx.edu/~emch/ip1/bandcombinations.html). Take a look through this webpage and try out combinations that are interesting to you.
 ![RGB](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite08.png)
-- `3-2-1` will show a 'natural color' image
+
+A color composite using `3-2-1` for a 'natural color' image:  
+
 ![natural](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite09.png)
-- `4-3-2` will show a 'near infrared' image which highlights turbidity and silt in water in cyan and shows vegetation in shades of red.
+
+Or to view a 'near infrared' image set the RGB band values to `4-3-2`. This type of 'false color composite' image is similar to infrared aerial photography and highlights vegetation in shades of red.
+
 ![infrared](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite10.png)
 
-#### Repeat steps 1-11 on the second Landsat image bundle we downloaded to compare false color composites before and after Hurricane Maria.
+The combination of bands `4-5-3` is particularly well suited for looking at land/water boundaries as well as levels of water saturation. Try these and others.
+
+12. To export a false color composite as a GeoTiff image (that freezes the given false color composite you've chosen) right click on the virtual raster that contains your `band set` in the layers menu. Select `save as` and choose `rendered image` as your output mode, and select a location and file name to save the image. This false color composite is now saved, you no longer have access to the raw data of each of the Landsat bands that originally comprised it but you can work with it as a base map or for other uses.
+
+#### Repeat steps 1-12 on the second Landsat image bundle we downloaded to compare false color composites before and after Hurricane Maria.
 
 The near infrared band combination highlights outflows and flooding in areas quite well, below is the same area depicted in the September 17 image above, but was captured on October 3, 2017:
+
 ![infrared](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite11.png)
+
+### Deliverables:
+Upload two color composite GeoTiff files to canvas.  
+
+You can choose to upload one for each Landsat dataset we downloaded (September 17 and October 3, 2017), or two different composites for the same date, or download additional Landsat images for two different dates that interest you and create color composites for these.
+
+
+If you are interested in learning how to make land use classifications based on Landsat satellite imagery you can follow [this](https://pointsunknown.nyc/tutorials/05_ChangeMapping.html#classification) tutorial written by CSR Research Scholar Grga Basic for *Points Unknown*.
+_________________________________________________________________________________________________
+
+Tutorial written by Dare Brawley, for *Conflict Urbanism: Puerto Rico Now*, a spring 2019 seminar offered by the [Center for Spatial Research](http://c4sr.columbia.edu). (Many thanks to Grga Basic for guidance on working with Landsat imagery in QGIS.) More information about the course is available [here](http://c4sr.columbia.edu/courses/conflict-urbanism-puerto-rico-now). 
