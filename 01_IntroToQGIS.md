@@ -230,7 +230,7 @@ Now on your own use select by attributes and select by location to answer the fo
 
 #### Symbolizing World Populations
 
-Now that we have these three different layers we can begin to create maps that highlight the differences between these different ways to measure population. We will compose a map that symbolizes each of our three data layers differently. We will use graduated symbols to express city population, a choropleth map for population by country and a classified color ramp for the gridded population. We will then go over cartographic conventions adding a legend and scale bar to the map and exporting as a PDF.
+Now that we have these three different layers we can begin to create maps that highlight the differences between these different ways to measure population. We will compose a map that symbolizes each of our three data layers differently. We will use graduated symbols to express city population, a choropleth map for population by country and a classified color ramp for the gridded population. We will then go over cartographic conventions adding a legend to the map and exporting as a PDF.
 
 **Proportional  symbols**
 
@@ -289,7 +289,7 @@ After selecting each combination **Click** `Classify`.  Click `Apply`. The count
 
 
 #### Designing a map
-In order to present these three types of population measures we will now compose a map layout and become familiar with the QGIS map composer. The map composer allows you to add a legend, north arrow and scale bar to the map as well as to export our work as a PDF.
+In order to present these three types of population measures we will now compose a map layout and become familiar with the QGIS map composer. The map composer allows you to add a legend, and north arrow to the map as well as to export our work as a PDF.
 
 Create a map composition where all three depictions of world populations are values. You can adjust the transparency of your data layers using the style menu. Experiment with changing the colors of the different layers to become more familiar with the style menus for raster and vector layers.
 
@@ -317,7 +317,7 @@ Last we will add two text boxes, one with a title for the map and another with a
 
 Finally use one of the export options circled in blue above to save the map composition as an image file, PDF, or SVG.
 
-* Make this map composition your own – experiment with changing colors, and symbol sizes and the locations of the text and scale bars. The aim is to create a design that you are pleased with, that is clear, and follows cartographic conventions.
+* Make this map composition your own – experiment with changing colors, and symbol sizes and the locations of the text and legend. The aim is to create a design that you are pleased with, that is clear, and follows cartographic conventions.
 
 ![Attribute](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/mappingdata02_29.png)
 
