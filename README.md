@@ -22,7 +22,7 @@ This module will introduce students to methods for creating spatial data. The ex
 **[3. Satellite Imagery](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/03_UsingSatelliteImagery.md)**  
 February 15, 11am-1pm, 208b Butler Library (Studio@Butler)  
 Exercise due February March 1  
-This module will cover methods for obtaining low resolution satellite imagery from the Landsat Program. The workshop and exercise will cover the difference between these two types of remotely sensed data as well as methods for creating false color composites.
+This module will cover methods for obtaining low resolution satellite imagery from the Landsat Program. The workshop and exercise will introduce key functions of multispectral satellite imagery, and to the process of visualizing phenomena through 'false color composites.'
 
 **4. Web Mapping 01**  
 February 22, 11am-1pm, 208b Butler Library (Studio@Butler)  

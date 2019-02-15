@@ -84,7 +84,8 @@ The SCP plugin provides a number of tools related to satellite image processing 
 2. Search for and install the `Semi-Automatic Classification Plugin`
 3. When the plugin has finished installing make sure the check box next to the plugin's name is checked and select `Close`.
 ![install](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/Satellite01.png)
-4. A new toolbar and dock should have been added to your QGIS window.
+4. A new toolbar and dock should have been added to your QGIS window. The are highlighted below in magenta. If these did not open for you, right click anywhere inside one of the grey toolbars surrounding the map canvas and select `SCP Dock` in the panels section, and `SCP Tools` and `SCP toolbar` in the toolbars section.
+
 ![dock](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite02.png)
 
 #### Next we will load the Landsat data we just downloaded and **create a "Band Set"** to make color composites from this data.
@@ -114,8 +115,12 @@ The SCP plugin provides a number of tools related to satellite image processing 
 10. Select the Band set layer as the `Input image` in the SCP Dock.
     - *note* you may need to click the refresh icon next to the input image dropdown menu
 ![Input](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite05.png)
-11. Use the `RBG` tool to set your desired band combination. This tool tells the program which band it should map to the red, green, or blue band of a standard RBG image. Setting band 3 and Red, band 2, as Blue, and band 1 as Green will show a `natural color` image whose colors are similar to what we are familiar with. This combination is similar to what we see with the naked eye because it uses the bands that capture electromagnetic wavelengths in the visible light spectrum.
+
+11. Next, on the `SCP Toolbar` use the `RBG` tool *(highlighted below in magenta)* to set your desired band combination. 
+
+This tool tells the program which band it should map to the red, green, or blue band of a standard RBG image. Setting band 3 and Red, band 2, as Blue, and band 1 as Green will show a `natural color` image whose colors are similar to what we are familiar with. This combination is similar to what we see with the naked eye because it uses the bands that capture electromagnetic wavelengths in the visible light spectrum.
     - Further information about band combinations and the kinds of phenomena they make visible can be found [here](http://web.pdx.edu/~emch/ip1/bandcombinations.html). Take a look through this webpage and try out combinations that are interesting to you.
+
 ![RGB](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite08.png)
 
 A color composite using `3-2-1` for a 'natural color' image:  
@@ -148,4 +153,4 @@ You can choose to upload one for each Landsat dataset we downloaded (September 1
 If you are interested in learning how to make land use classifications based on Landsat satellite imagery you can follow [this](https://pointsunknown.nyc/tutorials/05_ChangeMapping.html#classification) tutorial written by CSR Research Scholar Grga Basic for *Points Unknown*.
 _________________________________________________________________________________________________
 
-Tutorial written by Dare Brawley, for *Conflict Urbanism: Puerto Rico Now*, a spring 2019 seminar offered by the [Center for Spatial Research](http://c4sr.columbia.edu) (With thanks to Grga Basic for guidance on working with Landsat imagery in QGIS). More information about the course is available [here](http://c4sr.columbia.edu/courses/conflict-urbanism-puerto-rico-now). 
+Tutorial written by Dare Brawley, for *Conflict Urbanism: Puerto Rico Now*, a spring 2019 seminar offered by the [Center for Spatial Research](http://c4sr.columbia.edu) (With thanks to Grga Basic for guidance on working with Landsat imagery in QGIS). More information about the course is available [here](http://c4sr.columbia.edu/courses/conflict-urbanism-puerto-rico-now).
