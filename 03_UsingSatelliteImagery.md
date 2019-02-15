@@ -116,12 +116,15 @@ The SCP plugin provides a number of tools related to satellite image processing 
     - *note* you may need to click the refresh icon next to the input image dropdown menu
 ![Input](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite05.png)
 
-11. Next, on the `SCP Toolbar` use the `RBG` tool *(highlighted below in magenta)* to set your desired band combination. 
-
-This tool tells the program which band it should map to the red, green, or blue band of a standard RBG image. Setting band 3 and Red, band 2, as Blue, and band 1 as Green will show a `natural color` image whose colors are similar to what we are familiar with. This combination is similar to what we see with the naked eye because it uses the bands that capture electromagnetic wavelengths in the visible light spectrum.
-    - Further information about band combinations and the kinds of phenomena they make visible can be found [here](http://web.pdx.edu/~emch/ip1/bandcombinations.html). Take a look through this webpage and try out combinations that are interesting to you.
+11. Next, on the `SCP Toolbar` use the `RBG` tool *(highlighted below in magenta)* to set your desired band combination.
 
 ![RGB](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite08.png)
+
+This tool tells the program which band it should map to the red, green, or blue band of a standard RBG image. Setting band 3 and Red, band 2, as Blue, and band 1 as Green will show a `natural color` image whose colors are similar to what we are familiar with. This combination is similar to what we see with the naked eye because it uses the bands that capture electromagnetic wavelengths in the visible light spectrum.
+
+    - Further information about band combinations and the kinds of phenomena they make visible can be found [here](http://web.pdx.edu/~emch/ip1/bandcombinations.html). Take a look through this webpage and try out combinations that are interesting to you.
+
+
 
 A color composite using `3-2-1` for a 'natural color' image:  
 
