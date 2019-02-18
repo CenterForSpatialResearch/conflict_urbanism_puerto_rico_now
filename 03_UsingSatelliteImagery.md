@@ -87,6 +87,8 @@ The SCP plugin provides a number of tools related to satellite image processing 
 4. A new toolbar and dock should have been added to your QGIS window. The are highlighted below in magenta. If these did not open for you, right click anywhere inside one of the grey toolbars surrounding the map canvas and select `SCP Dock` in the panels section, and `SCP Tools` and `SCP toolbar` in the toolbars section.
 
 ![dock](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/satellite02.png)
+**Note: if you encounter any difficulty downloading or operating the Semi-Automatic Classification Plugin that you are not able to troubleshoot on your own you can use the computers in 202 Fayerweather Hall to complete the tutorial. The SCP is fully functioning there.**
+
 
 #### Next we will load the Landsat data we just downloaded and **create a "Band Set"** to make color composites from this data.
 1. Select the `Preprocessing` tool from the SCP toolbar.
