@@ -24,7 +24,7 @@ February 15, 11am-1pm, 208b Butler Library (Studio@Butler)
 Exercise due February March 1  
 This module will cover methods for obtaining low resolution satellite imagery from the Landsat Program. The workshop and exercise will introduce key functions of multispectral satellite imagery, and to the process of visualizing phenomena through 'false color composites.'
 
-**4. Web Mapping 01**  
+**[4. Web Mapping 01](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/04_WebMapping1.md)**  
 February 22, 11am-1pm, 208b Butler Library (Studio@Butler)  
 Exercise due March 1  
 In this two part module will introduce webmaps using Mapbox GL JS. This tutorial will introduce basic setup for making a webmap including basic elements of development for a web browser. 
