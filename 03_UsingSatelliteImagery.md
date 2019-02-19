@@ -84,7 +84,8 @@ The SCP plugin provides a number of tools related to satellite image processing 
 2. Search for and install the `Semi-Automatic Classification Plugin`
 3. When the plugin has finished installing make sure the check box next to the plugin's name is checked and select `Close`.
 ![install](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/Images/Satellite01.png)
-4. A new toolbar and dock should have been added to your QGIS window. The are highlighted below in magenta. If these did not open for you, right click anywhere inside one of the grey toolbars surrounding the map canvas and select `SCP Dock` in the panels section, and `SCP Tools` and `SCP toolbar` in the toolbars section.
+4. A new toolbar and dock should have been added to your QGIS window. The are highlighted below in magenta. If these did not open for you, right click anywhere inside one of the grey toolbars surrounding the map canvas and select `SCP Dock` in the panels section, and `SCP Tools` and `SCP toolbar` in the toolbars section.  
+
 **Note: if you encounter any difficulty downloading or operating the Semi-Automatic Classification Plugin that you are not able to troubleshoot on your own please use one of the computer labs on campus to complete the tutorial.**
   - **The plugin is functioning normally on the large computer workstations in the International Affairs Building (Lehman Library).**
   - **GSAPP students can also use the computers in 202 Fayerweather Hall**
