@@ -29,7 +29,7 @@ February 22, 11am-1pm, 208b Butler Library (Studio@Butler)
 Exercise due March 1  
 In this two part module will introduce webmaps using Mapbox GL JS. This tutorial will introduce basic setup for making a webmap including basic elements of development for a web browser. 
 
-**5. Web Mapping 02**  
+**[5. Web Mapping 02](https://github.com/CenterForSpatialResearch/ConflictUrbanismPuertoRicoNow_Tutorials/blob/master/05_WebMapping2.md)**  
 March 1, 11am-1pm, 208b Butler Library (Studio@Butler)  
 Exercise due March 15  
 In part two of the web mapping module students will learn how to create custom basemaps (tilesets) using external data. Students will be introduced to methods for creating custom tilesets with vector as well as raster data (satellite imagery).
