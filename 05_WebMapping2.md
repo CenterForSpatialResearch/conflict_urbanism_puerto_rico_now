@@ -45,6 +45,8 @@ ___
 ![Mapbox upload]
 ___
 
+**note:** tilesets can be made from vector or raster datasources. If you have a georeferenced raster dataset (i.e. a georeferenced scanned paper map, or a satellite image) you can create a tileset from it by following the same process and uploading a `GeoTIFF` file. 
+
 
 ## Mapbox styles
 
