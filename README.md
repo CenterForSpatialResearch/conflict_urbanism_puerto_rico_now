@@ -37,6 +37,6 @@ In part two of the web mapping module students will learn how to create custom b
 
 **6.Final Project Publishing**  
 **Required for all students**  
-March 8, 11am-1pm, 208b Butler Library (Studio@Butler)  
-Exercise due March 29  
-In this required module students will learn how to compose a document using markdown, a very simple markup language, and how to publish this document as a webpage using Jekyll and github pages. All students are required to attend this session and to use this format for the submission of their final projects.
+March 29, 11am-1pm, 208b Butler Library (Studio@Butler)  
+Exercise due April 5
+In this required module students will learn how to compose a document using markdown, a very simple markup language, and how to publish this document as a webpage using Jekyll and github pages. All students are required to complete this tutorial and to use this format for the submission of their final projects.
