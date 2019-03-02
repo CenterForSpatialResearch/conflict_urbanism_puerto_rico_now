@@ -35,10 +35,12 @@ At this stage, you should have:
 6. downloaded a text editor like [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/)
 7. created three empty files titled `index.html`, `style.css`, and `map.js` with your text editor and added them to your repository:  
 `git add index.html style.css map.js`
-- commited and pushed your changes:  
-`git commit -m 'initial import'`  
-`git push`  
-- viewed the result on your github page (the url should be `yourgithubusername.github.io/webmap_1` but you can also find this in the settings of the repository you created on github)
+8. commited and pushed your changes:
+      - in Git Bash or Terminal type:
+          1. `git commit -m 'initial import'`
+          and then
+          2. `git push`  
+9. viewed the result on your github page (the url should be `yourgithubusername.github.io/webmap_1` but you can also find this in the settings of the repository you created on github)
 
 
 ## A web page
