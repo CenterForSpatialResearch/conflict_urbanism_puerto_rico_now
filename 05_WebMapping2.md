@@ -14,7 +14,7 @@ ___
 ![311 Service Requests]
 ___
 
-View the data, and filter it by `Descriptor: Rat Sightings` and `Created Date is after 09/01/2018`. This will give us rat sightings in NYC since the beginning of the fall semester, around 2,631 of them (and counting...). Export the data as a CSV file, and call it `rat_sightings.csv`.
+View the data, and filter it by `Descriptor: Rat Sightings` and `Created Date is after 01/01/2019`. This will give us rat sightings in NYC since the beginning of the fall semester, around 2,631 of them (and counting...). Export the data as a CSV file, and call it `rat_sightings.csv`.
 
 ___
 ![Rat filter]
