@@ -34,12 +34,12 @@ At this stage, you should have:
         - by typing: `git clone https://github.com/yourusername/webmap_1`
 6. downloaded a text editor like [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/)
 7. created three empty files titled `index.html`, `style.css`, and `map.js` with your text editor and added them to your repository:  
-`git add index.html style.css map.js`
+      - `git add index.html style.css map.js`
 8. commited and pushed your changes:
       - in Git Bash or Terminal type:
-          1. `git commit -m 'initial import'`
+          -  `git commit -m 'initial import'`
           and then
-          2. `git push`  
+          -  `git push`  
 9. viewed the result on your github page (the url should be `yourgithubusername.github.io/webmap_1` but you can also find this in the settings of the repository you created on github)
 
 
