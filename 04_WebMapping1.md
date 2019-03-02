@@ -8,24 +8,37 @@ This tutorial will introduce you to the basic setup and what it feels like to de
 ## Setup Prerequisites
 
 At this stage, you should have:
-- created a [GitHub](https://github.com) account
-- created a new repository on GitHub, called `webmap_1`
-- set up your repository as a [GitHub page](https://pages.github.com/) (a project site from scratch)
-- installed [git](https://git-scm.com/downloads)
-- opened your terminal (Applications > Utilities > Terminal.app) and learned how to [navigate](https://www.macworld.com/article/2042378/master-the-command-line-navigating-files-and-folders.html)
-- set up git, ie:  
-`git config --global user.name 'My Name'`  
-`git config --global user.email 'email@wherever.com'`  
-...and added [colors](https://nathanhoad.net/how-to-colours-in-git)
-- cloned a local copy of your repository to your computer using [git](https://thenewstack.io/tutorial-git-for-absolutely-everyone/):  
-`git clone https://github.com/yourusername/webmap_1`
-- downloaded a text editor like [Sublime Text](https://www.sublimetext.com/)
-- created the empty files `index.html`, `style.css`, and `map.js` with your editor and added them to your repository:  
+1. created a [GitHub](https://github.com) account
+2. created a new repository on GitHub
+    - from the **Your Profile** page in your newly created github account select **Repositories**
+    - select the green **New** button in the top right of the page
+    - name this repository `webmap_1`
+    - select **Initialize this repository with a README**
+    - select **Create Repository**
+3. set up your repository as a [GitHub page](https://pages.github.com/) (a project site from scratch)
+    - from the new repository you've just created select **Settings**
+    - scroll down to **GitHub Pages** and select `Master Branch` as the **Source**
+4. installed [git](https://git-scm.com/downloads).
+    - download and install the git version for your operating system. Follow the instructions of the installer.
+
+5. used Git in the Terminal or Git Bash to clone the repository you created on github.
+
+    - **On Mac** opened your terminal (Applications > Utilities > Terminal.app); **on PC** opened Git Bash (Programs > Git > Git Bash, or search for it in the start menu).
+    - and learned how to [navigate](https://www.macworld.com/article/2042378/master-the-command-line-navigating-files-and-folders.html);
+    - navigate to the folder where you would like to create your webmap.
+    - set up git, type the following in your terminal/git bash:  
+      `git config --global user.name 'My Name'`  
+      `git config --global user.email 'email@wherever.com'` (this email should match the one you used to set up Github)
+      ...and added [colors](https://nathanhoad.net/how-to-colours-in-git) if you want :)  
+    - cloned a local copy of your repository to your computer using git.
+        - by typing: `git clone https://github.com/yourusername/webmap_1`
+6. downloaded a text editor like [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/)
+7. created three empty files titled `index.html`, `style.css`, and `map.js` with your text editor and added them to your repository:  
 `git add index.html style.css map.js`
 - commited and pushed your changes:  
 `git commit -m 'initial import'`  
 `git push`  
-- viewed the result on your github page
+- viewed the result on your github page (the url should be `yourgithubusername.github.io/webmap_1` but you can also find this in the settings of the repository you created on github)
 
 
 ## A web page
