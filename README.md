@@ -35,7 +35,7 @@ Exercise due March 15
 In part two of the web mapping module students will learn how to create custom basemaps (tilesets) using external data. Students will be introduced to methods for creating custom tilesets with vector as well as raster data (satellite imagery).
 
 
-**6.Final Project Publishing**  
+**[6.Final Project Publishing](https://github.com/CenterForSpatialResearch/conflict_urbanism_puerto_rico_now/blob/master/06_final_project_publishing.md)**  
 **Required for all students**  
 March 29, 11am-1pm, 208b Butler Library (Studio@Butler)  
 Exercise due April 5

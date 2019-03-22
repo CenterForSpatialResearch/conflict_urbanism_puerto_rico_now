@@ -50,18 +50,18 @@ This will open a new browser window. This is text written in markdown. It what y
 6. Now we'll each customize this layout and post it to the class website by submitting something called a pull request.
 
 7. Edit the document's header (the area highlighted in yellow above).
-  - layout should stay labeled as post: `layout: post`
-  - change the date to today's date
-  - leave the image as-is `image: "/puerto_rico_now/images/groupname/csr_thumbnail.png"`
-  - change the title to your uni:  `title:  "xyz2222"`
-  - change the author to your name: `author: "Jane Adams"`
+    - layout should stay labeled as post: `layout: post`
+    - change the date to today's date
+    - leave the image as-is `image: "/puerto_rico_now/images/groupname/csr_thumbnail.png"`
+    - change the title to your uni:  `title:  "xyz2222"`
+    - change the author to your name: `author: "Jane Adams"`
 
 8. Edit the document to practice formatting text and including links. Write in the document so you have:
-  - a paragraph of text (use your final project proposal)
-  - a word in bold,
-  - a word in italics
-  - a link to the github repository for the tutorials for this class
-  - (optional) an iframe with the webmap you created in tutorial 4 or 5 embedded
+    - a paragraph of text (use your final project proposal)
+    - a word in bold,
+    - a word in italics
+    - a link to the github repository for the tutorials for this class
+    - (optional) an iframe with the webmap you created in tutorial 4 or 5 embedded
 
 #### Step 4: submit a pull request to add your post to the class website
 You do not yet have permission to edit the class website. Thus to add your post to the site you will need to create a 'pull request' the TAs will then add you as a collaborator to the site so you can upload new posts without needing permission in the future.
@@ -135,6 +135,10 @@ To update your post after you have made changes to your markdown file:
 
 3. Wait 1-2 minutes, then visit the class website URL at [https://centerforspatialresearch.github.io/puerto_rico_now/](https://centerforspatialresearch.github.io/puerto_rico_now/). The updates to your post should have appeared.
 
+## Deliverables by April 5
+Submit links via courseworks to:
+- your individual post
+- the post you created with your group
 
 
 ______________________________________________________________________________________________________________
