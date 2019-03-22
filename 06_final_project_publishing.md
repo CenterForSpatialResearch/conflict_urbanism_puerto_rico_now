@@ -135,7 +135,8 @@ To update your post after you have made changes to your markdown file:
 
 3. Wait 1-2 minutes, then visit the class website URL at [https://centerforspatialresearch.github.io/puerto_rico_now/](https://centerforspatialresearch.github.io/puerto_rico_now/). The updates to your post should have appeared.
 
-## Deliverables by April 5
+## Deliverables
+(due by April 5)
 Submit links via courseworks to:
 - your individual post
 - the post you created with your group
