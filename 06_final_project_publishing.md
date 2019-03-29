@@ -107,7 +107,7 @@ This is a two step process.
 **Step one:** you must upload your image to a folder in the class website Github repository.
 **Step two:** you must link to that image from within your post.
 
-All of your group's images should be uploaded in the folder with your last names (these have been pre-created for you).
+All of your group's images should be uploaded in the folder with your group name (these have been pre-created for you, please refer to the list of group names and group members at the bottom of this document).
 
   5.  Find an image relevant to your project's topic that is in the [public domain](https://en.wikipedia.org/wiki/Public_domain) or for which you have image rights.  
   6. save the image with a reasonable file name
@@ -123,7 +123,7 @@ All of your group's images should be uploaded in the folder with your last names
     - the information in the () contains the path to the image within our website.
   b. replace the description with a description of your image
   c. replace the file path with the path to the image you just uploaded
-      **Note** the file path must start with a `/` i.e. it must be `/puerto_rico/images/` if you do not include the `/` then the link will not work. 
+      **Note** the file path must start with a `/` i.e. it must be `/puerto_rico/images/` if you do not include the `/` then the link will not work.
 
 11. **Save your post.**
 
@@ -167,6 +167,84 @@ Submit links via courseworks to:
 - the post you created with your group
 
 
+## For reference: project group image folder names
+`andrey`: Andrey Prigov
+
+`food_soverignty`: Crystal Herrera Pereira, Kevin Nick Borja, Shiori Osakata
+
+
+`infra_power`: Caitlin Sills, Alexander Odom
+
+`migration`: Isabella Lajara, Isaac Kim, Sanggyu Shin, Jinsook Lee, Chenyan Zhou, Simone Hasse Stavnsbo
+
+`outage`: Lorena Galvao, Richard Chou
+
+`future_scenarios`: Aline F. Estefam, Ge Guo, Esteban Vanegas Jr, Qi Yang
+
+`decision_model`: Pauline Claramunt, Madeline Entrikin, Caitlin Bone, Tyrene Calvesbert
+
+`debt`: Don Chen, Alicia French, Ran Ma, Maria Moersen, Jaal Alston
+
+`recovery`: Gloria Serra Coch, Ashley Louie
+
+`infrastructure`: Junyu Cao, Shuo Yang
+
+`public_art`: Daniel Bernal, Jean-Pierre Villafane, Aris Minaretzis Tsionos, Tim Battelino
+
+
+## For reference: post template
+```
+---
+layout: post
+date:   2019-03-20
+image: "/puerto_rico_now/images/groupname/csr_thumbnail.png"
+title:  "Template: Title of Your Final Project"
+author: "Names Of Everyone In Your Group"
+---
+This is a document that is written in markdown. What is markdown? It is a 'markup language' that allows you to format plain text in a way that is easily converted to many different formats. For example, this document was written in markdown but will be used as an webpage and converted into HTML.  
+
+To present and turn in your final projects for Conflict Urbanism: Puerto Rico Now you will be editing this template. You will include all of the text of your paper here, along with any and all images, maps, videos, or other materials that you produce.  
+
+[This webpage](https://guides.github.com/features/mastering-markdown/) provides a comprehensive guide to markdown syntax. But to make things easier for you we are including a cheat sheet of the main things you need to know here.  
+
+#### Please use level 4 headings for major section divisions
+
+Write **words in bold** like this.  
+
+Italics are *similar* and are formatted like this.  
+
+To make a paragraph break you need to add two spaces at the end of your line before going to the next line.  
+
+See this is now a new paragraph.  
+
+Lists are easy:
+1. they can be ordered
+1. like this
+1. notice that the numbers are automatically ordered
+  1. use two spaces in front to indent
+
+Or they can just be bullet points:
+- like this
+* or like this
+  - use two spaces
+  - to have nested lists
+
+Use Author-Date parenthetical citations following Chicago Manual of Style conventions throughout your document, and add a works cited at the bottom of your post. See Author-Date quick guide [here](https://www-chicagomanualofstyle-org.ezproxy.cul.columbia.edu/tools_citationguide/citation-guide-2.html) for citation conventions.  
+
+To include hyperlinks format them like this [text of link](http://c4sr.columbia.edu/).  
+
+To embed images first ensure that the file is at least 740px wide. Then place the image file in a folder named for your group in the images folder. Then link to that image using the format here, but replace the file path with the name of your group's folder and appropriate image file name:  
+
+![description of image](/puerto_rico_now/images/groupname/test2-.png)
+
+If you want to include html files (i.e. an interactive map) host these via your personal github page, and then you can embed them in your document with a iframe. The format looks like this:  
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/290575503?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"></iframe></div>  
+
+All you need to do to use one is replace the url that is between the two " ". Here is an iframe of mapbox tiles:  
+
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://api.mapbox.com/styles/v1/mapbox/satellite-v9.html?title=true&access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NDg1bDA1cjYzM280NHJ5NzlvNDMifQ.d6e-nNyBDtmQCVwVNivz7A#2/0/0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"></iframe></div>```
 ______________________________________________________________________________________________________________
 
 
