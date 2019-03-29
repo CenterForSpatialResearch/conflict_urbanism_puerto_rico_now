@@ -118,11 +118,12 @@ All of your group's images should be uploaded in the folder with your last names
 
 **Now we'll embed the image in to the body of your post.**
 
-  10. You'll use the following syntax:  `![description of image](/puerto_rico_now/images/groupname/test2-.png)` you can see that there is  an example of this in the [template document](https://github.com/CenterForSpatialResearch/puerto_rico_now/blob/master/_posts/2019-03-20-template.markdown).
+  10. You'll use the following syntax:  `![description of image](/puerto_rico_now/images/groupname/test2-.png)` you can see that there is an example of this in the [template document](https://github.com/CenterForSpatialResearch/puerto_rico_now/blob/master/_posts/2019-03-20-template.markdown).
     - the information between the [ ] contains a description of the image
     - the information in the () contains the path to the image within our website.
   b. replace the description with a description of your image
   c. replace the file path with the path to the image you just uploaded
+      **Note** the file path must start with a `/` i.e. it must be `/puerto_rico/images/` if you do not include the `/` then the link will not work. 
 
 11. **Save your post.**
 
