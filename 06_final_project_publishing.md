@@ -124,7 +124,7 @@ All of your group's images should be uploaded in the folder with your last names
   b. replace the description with a description of your image
   c. replace the file path with the path to the image you just uploaded
 
-11. Save your post.
+11. **Save your post.**
 
 12. Now let's replace the thumbnail image that appears on the course website landing page. This image, currently a placeholder, is defined in the header of your post. To change it you will need to first choose and upload an image, and then change the link in the yaml header. Okay, lets do it:
 
