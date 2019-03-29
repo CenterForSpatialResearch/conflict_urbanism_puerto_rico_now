@@ -242,6 +242,14 @@ In case you need it here's the
 
 
 
+## Deliverables
+  **(due by April 5)**
+
+  Submit links via courseworks to:
+  - your individual post
+  - the post you created with your group
+
+
 
 ______________________________________________________________________________________________________________
 
