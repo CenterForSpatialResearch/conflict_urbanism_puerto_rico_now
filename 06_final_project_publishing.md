@@ -86,7 +86,53 @@ Once you have received an invitation to collaborate on the class website reposit
 #### Step 5: Creating your final project post
 1. Open your text editor, create a new blank file.
 
-2. Create a yaml header for your post at the top of the file. Replace the fields to match your group.
+2. Create a yaml header for your post at the top of the file. Replace the **date, title,** and **author** fields to match your group. (Don't change the **layout** or **image**) fields.
+
+
+```
+---
+layout: post
+date:   2019-03-20
+image: "/puerto_rico_now/images/groupname/csr_thumbnail.png"
+title:  "Provisional Title of Your Final Project"
+author: "Names Of Everyone In Your Group"
+---
+
+```  
+3. Save the file using the following format `2019-03-29-lastname1-lastname2.markdown`. (Follow this format exactly but replace with your group member last names and today's date)
+
+4. **Practice embedding an image in your post:**
+
+This is a two step process.
+**Step one:** you must upload your image to a folder in the class website Github repository.
+**Step two:** you must link to that image from within your post.
+
+All of your group's images should be uploaded in the folder with your last names (these have been pre-created for you).
+
+  5.  Find an image relevant to your project's topic that is in the [public domain](https://en.wikipedia.org/wiki/Public_domain) or for which you have image rights.  
+  6. save the image with a reasonable file name
+  7. upload the image to the `images` >  `your-last-names` folder in the class site Github repository
+  ![image upload]
+  8. After dragging the image file you have chosen into the uploader, enter a descriptive caption for your commit, and select `Commit Changes`
+  9. Check the folder to verify that the image was uploaded.
+
+**Now we'll embed the image in to the body of your post.**
+
+  10. You'll use the following syntax:  `![description of image](/puerto_rico_now/images/groupname/test2-.png)` you can see that there is  an example of this in the [template document](https://github.com/CenterForSpatialResearch/puerto_rico_now/blob/master/_posts/2019-03-20-template.markdown).
+    - the information between the [ ] contains a description of the image
+    - the information in the () contains the path to the image within our website.
+  b. replace the description with a description of your image
+  c. replace the file path with the path to the image you just uploaded
+
+11. Save your post.
+
+12. Now let's replace the thumbnail image that appears on the course website landing page. This image, currently a placeholder, is defined in the header of your post. To change it you will need to first choose and upload an image, and then change the link in the yaml header. Okay, lets do it:
+
+13. Choose an image that is representative of your project, crop it to have a square aspect ratio that is at least 300px wide.
+
+14. Just like you did in step 7 above upload this image to your group's folder within the `images` folder.
+
+15. Update the yaml header of your post, replace the path in the `image` field to match the folder and file name of the square image you just uploaded to github.
 ```
 ---
 layout: post
@@ -97,35 +143,12 @@ author: "Names Of Everyone In Your Group"
 ---
 
 ```
-3. Save the file using the following format `2019-03-29-lastname1-lastname2.markdown`. (Follow this format exactly but replace with your group member last names and today's date)
 
-4. Practice embedding an image in your post:
+16. **Save your post**
 
-This is a two step process.
-**Step one:** you must upload your image to a folder in the class website Github repository.
-**Step two:** you must link to that image from within your post.
+17. Commit your post to the repository. Navigate to the `_posts` folder. And select `Upload Files`. Drag the markdown file containing your post to the window. Write a commit message, and commit your post.
 
-All of your group's images should be uploaded in the folder with your last names (these have been pre-created for you).
-
-  a. Find an image relevant to your project's topic that is in the [public domain](https://en.wikipedia.org/wiki/Public_domain) or for which you have image rights.  
-  b. save the image with a reasonable file name
-  c. upload the image to the `images` >  `your-last-names` folder in the class site Github repository
-  ![image upload]
-  d. After dragging the image file you have chosen into the uploader, enter a descriptive caption for your commit, and select `Commit Changes`
-  e. Check the folder to verify that the image was uploaded.
-
-Now we'll embed the image in to the body of your post.   
-  a. You'll use the following syntax:  `![description of image](/puerto_rico_now/images/groupname/test2-.png)` you can see that there is  an example of this in the (template document)[https://github.com/CenterForSpatialResearch/puerto_rico_now/blob/master/_posts/2019-03-20-template.markdown].
-    - the information between the [ ] contains a description of the image
-    - the information in the () contains the path to the image within our website.
-  b. replace the description with a description of your image
-  c. replace the file path with the path to the image you just uploaded
-
-5. Save your post.
-
-6. Commit your post to the repository. Navigate to the `_posts` folder. And select `Upload Files`. Drag the markdown file containing your post to the window. Write a commit message, and commit your post.
-
-7. Wait 1-2 minutes, then visit the class website URL at [https://centerforspatialresearch.github.io/puerto_rico_now/](https://centerforspatialresearch.github.io/puerto_rico_now/). Your post should have appeared.
+18. Wait 1-2 minutes, then visit the class website URL at [https://centerforspatialresearch.github.io/puerto_rico_now/](https://centerforspatialresearch.github.io/puerto_rico_now/). Your post should have appeared.
 
 #### Step 6: Making changes to your post
 
