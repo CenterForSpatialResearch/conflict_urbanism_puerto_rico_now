@@ -159,15 +159,9 @@ To update your post after you have made changes to your markdown file:
 
 3. Wait 1-2 minutes, then visit the class website URL at [https://centerforspatialresearch.github.io/puerto_rico_now/](https://centerforspatialresearch.github.io/puerto_rico_now/). The updates to your post should have appeared.
 
-## Deliverables
-(due by April 5)  
-
-Submit links via courseworks to:
-- your individual post
-- the post you created with your group
-
-
 ## For reference: project group image folder names
+Use the folder that corresponds to your group's name to upload any photos. DO NOT EDIT ANY OTHER GROUP'S FOLDER.
+
 `andrey`: Andrey Prigov
 
 `food_soverignty`: Crystal Herrera Pereira, Kevin Nick Borja, Shiori Osakata
@@ -193,58 +187,62 @@ Submit links via courseworks to:
 
 
 ## For reference: post template
-```
----
-layout: post
-date:   2019-03-20
-image: "/puerto_rico_now/images/groupname/csr_thumbnail.png"
-title:  "Template: Title of Your Final Project"
-author: "Names Of Everyone In Your Group"
----
-This is a document that is written in markdown. What is markdown? It is a 'markup language' that allows you to format plain text in a way that is easily converted to many different formats. For example, this document was written in markdown but will be used as an webpage and converted into HTML.  
+In case you need it here's the
+  `---
+  layout: post
+  date:   2019-03-20
+  image: "/puerto_rico_now/images/groupname/csr_thumbnail.png"
+  title:  "Template: Title of Your Final Project"
+  author: "Names Of Everyone In Your Group"
+  ---
+  This is a document that is written in markdown. What is markdown? It is a 'markup language' that allows you to format plain text in a way that is easily converted to many different formats. For example, this document was written in markdown but will be used as an webpage and converted into HTML.  
 
-To present and turn in your final projects for Conflict Urbanism: Puerto Rico Now you will be editing this template. You will include all of the text of your paper here, along with any and all images, maps, videos, or other materials that you produce.  
+  To present and turn in your final projects for Conflict Urbanism: Puerto Rico Now you will be editing this template. You will include all of the text of your paper here, along with any and all images, maps, videos, or other materials that you produce.  
 
-[This webpage](https://guides.github.com/features/mastering-markdown/) provides a comprehensive guide to markdown syntax. But to make things easier for you we are including a cheat sheet of the main things you need to know here.  
+  [This webpage](https://guides.github.com/features/mastering-markdown/) provides a comprehensive guide to markdown syntax. But to make things easier for you we are including a cheat sheet of the main things you need to know here.  
 
-#### Please use level 4 headings for major section divisions
+  #### Please use level 4 headings for major section divisions
 
-Write **words in bold** like this.  
+  Write **words in bold** like this.  
 
-Italics are *similar* and are formatted like this.  
+  Italics are *similar* and are formatted like this.  
 
-To make a paragraph break you need to add two spaces at the end of your line before going to the next line.  
+  To make a paragraph break you need to add two spaces at the end of your line before going to the next line.  
 
-See this is now a new paragraph.  
+  See this is now a new paragraph.  
 
-Lists are easy:
-1. they can be ordered
-1. like this
-1. notice that the numbers are automatically ordered
-  1. use two spaces in front to indent
+  Lists are easy:
+  1. they can be ordered
+  1. like this
+  1. notice that the numbers are automatically ordered
+    1. use two spaces in front to indent
 
-Or they can just be bullet points:
-- like this
-* or like this
-  - use two spaces
-  - to have nested lists
+  Or they can just be bullet points:
+  - like this
+  * or like this
+    - use two spaces
+    - to have nested lists
 
-Use Author-Date parenthetical citations following Chicago Manual of Style conventions throughout your document, and add a works cited at the bottom of your post. See Author-Date quick guide [here](https://www-chicagomanualofstyle-org.ezproxy.cul.columbia.edu/tools_citationguide/citation-guide-2.html) for citation conventions.  
+  Use Author-Date parenthetical citations following Chicago Manual of Style conventions throughout your document, and add a works cited at the bottom of your post. See Author-Date quick guide [here](https://www-chicagomanualofstyle-org.ezproxy.cul.columbia.edu/tools_citationguide/citation-guide-2.html) for citation conventions.  
 
-To include hyperlinks format them like this [text of link](http://c4sr.columbia.edu/).  
+  To include hyperlinks format them like this [text of link](http://c4sr.columbia.edu/).  
 
-To embed images first ensure that the file is at least 740px wide. Then place the image file in a folder named for your group in the images folder. Then link to that image using the format here, but replace the file path with the name of your group's folder and appropriate image file name:  
+  To embed images first ensure that the file is at least 740px wide. Then place the image file in a folder named for your group in the images folder. Then link to that image using the format here, but replace the file path with the name of your group's folder and appropriate image file name:  
 
-![description of image](/puerto_rico_now/images/groupname/test2-.png)
+  ![description of image](/puerto_rico_now/images/groupname/test2-.png)
 
-If you want to include html files (i.e. an interactive map) host these via your personal github page, and then you can embed them in your document with a iframe. The format looks like this:  
+  If you want to include html files (i.e. an interactive map) host these via your personal github page, and then you can embed them in your document with a iframe. The format looks like this:  
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/290575503?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"></iframe></div>  
+  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/290575503?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"></iframe></div>  
 
-All you need to do to use one is replace the url that is between the two " ". Here is an iframe of mapbox tiles:  
+  All you need to do to use one is replace the url that is between the two " ". Here is an iframe of mapbox tiles:  
 
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://api.mapbox.com/styles/v1/mapbox/satellite-v9.html?title=true&access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NDg1bDA1cjYzM280NHJ5NzlvNDMifQ.d6e-nNyBDtmQCVwVNivz7A#2/0/0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"></iframe></div>```
+  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://api.mapbox.com/styles/v1/mapbox/satellite-v9.html?title=true&access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NDg1bDA1cjYzM280NHJ5NzlvNDMifQ.d6e-nNyBDtmQCVwVNivz7A#2/0/0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"></iframe></div>`
+
+
+
+
 ______________________________________________________________________________________________________________
 
 
