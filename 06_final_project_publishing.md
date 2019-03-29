@@ -160,35 +160,35 @@ To update your post after you have made changes to your markdown file:
 3. Wait 1-2 minutes, then visit the class website URL at [https://centerforspatialresearch.github.io/puerto_rico_now/](https://centerforspatialresearch.github.io/puerto_rico_now/). The updates to your post should have appeared.
 
 ## For reference: project group image folder names
-Use the folder that corresponds to your group's name to upload any photos. DO NOT EDIT ANY OTHER GROUP'S FOLDER.
+    Use the folder that corresponds to your group's name to upload any photos. DO NOT EDIT ANY OTHER GROUP'S FOLDER.
 
-`andrey`: Andrey Prigov
+    `andrey`: Andrey Prigov
 
-`food_soverignty`: Crystal Herrera Pereira, Kevin Nick Borja, Shiori Osakata
+    `food_soverignty`: Crystal Herrera Pereira, Kevin Nick Borja, Shiori Osakata
 
 
-`infra_power`: Caitlin Sills, Alexander Odom
+    `infra_power`: Caitlin Sills, Alexander Odom
 
-`migration`: Isabella Lajara, Isaac Kim, Sanggyu Shin, Jinsook Lee, Chenyan Zhou, Simone Hasse Stavnsbo
+    `migration`: Isabella Lajara, Isaac Kim, Sanggyu Shin, Jinsook Lee, Chenyan Zhou, Simone Hasse Stavnsbo
 
-`outage`: Lorena Galvao, Richard Chou
+    `outage`: Lorena Galvao, Richard Chou
 
-`future_scenarios`: Aline F. Estefam, Ge Guo, Esteban Vanegas Jr, Qi Yang
+    `future_scenarios`: Aline F. Estefam, Ge Guo, Esteban Vanegas Jr, Qi Yang
 
-`decision_model`: Pauline Claramunt, Madeline Entrikin, Caitlin Bone, Tyrene Calvesbert
+    `decision_model`: Pauline Claramunt, Madeline Entrikin, Caitlin Bone, Tyrene Calvesbert
 
-`debt`: Don Chen, Alicia French, Ran Ma, Maria Moersen, Jaal Alston
+    `debt`: Don Chen, Alicia French, Ran Ma, Maria Moersen, Jaal Alston
 
-`recovery`: Gloria Serra Coch, Ashley Louie
+    `recovery`: Gloria Serra Coch, Ashley Louie
 
-`infrastructure`: Junyu Cao, Shuo Yang
+    `infrastructure`: Junyu Cao, Shuo Yang
 
-`public_art`: Daniel Bernal, Jean-Pierre Villafane, Aris Minaretzis Tsionos, Tim Battelino
+    `public_art`: Daniel Bernal, Jean-Pierre Villafane, Aris Minaretzis Tsionos, Tim Battelino
 
 
 ## For reference: post template
 In case you need it here's the
-  `---
+  ```---
   layout: post
   date:   2019-03-20
   image: "/puerto_rico_now/images/groupname/csr_thumbnail.png"
@@ -238,7 +238,7 @@ In case you need it here's the
   All you need to do to use one is replace the url that is between the two " ". Here is an iframe of mapbox tiles:  
 
 
-  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://api.mapbox.com/styles/v1/mapbox/satellite-v9.html?title=true&access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NDg1bDA1cjYzM280NHJ5NzlvNDMifQ.d6e-nNyBDtmQCVwVNivz7A#2/0/0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"></iframe></div>`
+  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://api.mapbox.com/styles/v1/mapbox/satellite-v9.html?title=true&access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NDg1bDA1cjYzM280NHJ5NzlvNDMifQ.d6e-nNyBDtmQCVwVNivz7A#2/0/0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"></iframe></div>```
 
 
 
