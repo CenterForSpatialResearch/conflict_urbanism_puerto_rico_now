@@ -26,16 +26,16 @@ To successfully complete this mandatory tutorial you must:
 1. Visit [github.com](https://github.com/) and sign up for a Github account if you do not already have one
 
 #### Step 2: Get familiar with the structure of the class website
-1. Use a web browser to navigate to the live website that you will each contribute to at [centerforspatialresearch.github.io/puerto_rico_now/](centerforspatialresearch.github.io/puerto_rico_now/). It's not very interesting yet because it doesn't have your final projects.
+1. Use a web browser to navigate to the live website that you will each contribute to at [https://centerforspatialresearch.github.io/puerto_rico_now/](https://centerforspatialresearch.github.io/puerto_rico_now/). It's not very interesting yet because it doesn't have your final projects.
 2. This website is being powered by the content contained in this [Github repository](https://github.com/CenterForSpatialResearch/puerto_rico_now). Visit this repository. The repository looks something like this:
 ![github repo]
   - Each page on the website is made by producing a new file in the `_posts` folder of the repository.
   - Any images that are being shown are contained in folders in the `images` folder.
   - **Note** `_posts` and `images` are the only two folders you will need to interact with.
 
-3. Open the `_posts` folder and then the `2019-03-20-brawley-stokes.markdown` file.  
-  - select `Raw`
-  ![raw mode]
+3. Open the `_posts` folder and then the `2019-03-20-template.markdown` file.  
+  - select `Raw`  
+  ![raw mode]  
 
 This will open a new browser window. This is text written in markdown. It what you are viewing when you are at this link.
 ![markdown html comparison]
@@ -43,7 +43,7 @@ This will open a new browser window. This is text written in markdown. It what y
 #### Step 3: Practice writing text in markdown
 1. Open the text editor of your choice (we suggest either [Atom](https://atom.io/) or [Sublime Text](https://www.sublimetext.com/), download one of these if you haven't already)
 2. Create a new empty file in your text editor.
-3. **Copy** all of the raw markdown from 2019-03-20-brawley-stokes.markdown and **paste** it in to this empty file.
+3. **Copy** all of the raw markdown from 2019-03-20-template.markdown and **paste** it in to this empty file.
 4. Save the file in the following format `2019-03-29-lastname.markdown`
 5. Once you save the file your text editor will recognize you are writing in markdown and will start highlighting the special syntax of this language:
 ![syntax highlight]
@@ -136,7 +136,8 @@ To update your post after you have made changes to your markdown file:
 3. Wait 1-2 minutes, then visit the class website URL at [https://centerforspatialresearch.github.io/puerto_rico_now/](https://centerforspatialresearch.github.io/puerto_rico_now/). The updates to your post should have appeared.
 
 ## Deliverables
-(due by April 5)
+(due by April 5)  
+
 Submit links via courseworks to:
 - your individual post
 - the post you created with your group
