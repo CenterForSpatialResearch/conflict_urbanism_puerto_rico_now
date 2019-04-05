@@ -38,5 +38,5 @@ In part two of the web mapping module students will learn how to create custom b
 **[6.Final Project Publishing](https://github.com/CenterForSpatialResearch/conflict_urbanism_puerto_rico_now/blob/master/06_final_project_publishing.md)**  
 **Required for all students**  
 March 29, 11am-1pm, 208b Butler Library (Studio@Butler)  
-Exercise due April 5
+Exercise due April 12
 In this required module students will learn how to compose a document using markdown, a very simple markup language, and how to publish this document as a webpage using Jekyll and github pages. All students are required to complete this tutorial and to use this format for the submission of their final projects.
